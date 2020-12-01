@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run watch:css && ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "watch:css": "postcss src/tailwind.css -o src/main.css"
   },
   "private": true,
   "dependencies": {
@@ -19,8 +20,13 @@
     "@angular/platform-browser": "~8.2.11",
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
+    "angular-font-awesome": "^3.1.2",
+    "autoprefixer": "^9.8.6",
     "bootstrap": "^3.4.1",
+    "font-awesome": "^4.7.0",
+    "postcss-cli": "^7.1.2",
     "rxjs": "~6.4.0",
+    "tailwindcss": "^1.9.6",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
