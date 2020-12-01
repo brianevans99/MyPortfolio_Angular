@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { Experience } from "./experience.model";
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css']
+  selector: "app-experience",
+  templateUrl: "./experience.component.html",
 })
 export class ExperienceComponent implements OnInit {
+  experiences: Experience[] = [
+    new Experience(
+      "Bravo Echo Web Development",
+      "Sole proprietor - Designing and managing local business websites and ad campaigns"
+    ),
+    new Experience(
+      "Design Options",
+      "Partnership - Maintained ecommerce presence using Shopify and WooCommerce"
+    ),
+    new Experience(
+      "Southeastern Engineering, Inc.",
+      "Managed federally funded GDOT projects for local government clients within the state.  Recorded and managed database updates for project/client tracking purposes, and hosted monthly teleconferences with involved parties."
+    ),
+  ];
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

@@ -1,2 +1,4 @@
 <p>Other Interests:</p>
-<app-interests-list></app-interests-list>
+<div *ngFor="let item of interests">
+  <span>{{ item.interest }}</span>
+</div>

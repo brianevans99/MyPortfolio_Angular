@@ -1,10 +1,12 @@
 // skill template
 export class Skill {
-  public skillName: string;
-  public imagePath: string;
+  public name: string;
+  public icon: string;
+  public color: string;
 
-  constructor(name: string, path: string) {
-    this.skillName = name;
-    this.imagePath = path;
+  constructor(name: string, path: string, color: string) {
+    this.name = name;
+    this.icon = path;
+    this.color = color;
   }
 }

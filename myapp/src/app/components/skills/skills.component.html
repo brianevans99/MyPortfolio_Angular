@@ -1,2 +1,10 @@
-<!-- <app-skills-list></app-skills-list> -->
-<h1>skills works!</h1>
+<div
+  class="grid grid-rows-6 grid-cols-2 grid-flow-col font-semibold text-base sm:text-lg md:text-xl pb-4"
+>
+  <div class="flex items-center px-2" *ngFor="let skill of skills">
+    <div class="mr-1 w-6 md:w-8 pb-1">
+      <i [style.color]="skill.color" class="{{ skill.icon }}"></i>
+    </div>
+    <div class="pb-1 text-white">{{ skill.name }}</div>
+  </div>
+</div>
