@@ -1,6 +1,14 @@
+//Angular dependency imports
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
+// other dependency imports
+import { MatVideoModule } from "mat-video";
+import { AngularFontAwesomeModule } from "angular-font-awesome";
+
+// component imports
 import { AppComponent } from "./app.component";
 import { HomepageComponent } from "./pages/homepage/homepage.component";
 import { PortfolioComponent } from "./pages/portfolio/portfolio.component";
@@ -8,7 +16,6 @@ import { ResumeComponent } from "./pages/resume/resume.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { AvatarComponent } from "./components/avatar/avatar.component";
 import { SkillsComponent } from "./components/skills/skills.component";
-import { RouterModule, Routes } from "@angular/router";
 import { InfoComponent } from "./components/info/info.component";
 import { VideoComponent } from "./components/video/video.component";
 import { EducationComponent } from "./components/education/education.component";
@@ -17,11 +24,7 @@ import { InterestsComponent } from "./components/interests/interests.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
 import { SocialComponent } from "./components/social/social.component";
 import { ContactComponent } from "./components/contact/contact.component";
-
-import { AngularFontAwesomeModule } from "angular-font-awesome";
 import { SocialListComponent } from "./components/social/social-list/social-list.component";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatVideoModule } from "mat-video";
 
 const appRoutes: Routes = [
   { path: "", component: HomepageComponent },

@@ -5,6 +5,17 @@ import { Component, OnInit } from "@angular/core";
   templateUrl: "./info.component.html",
 })
 export class InfoComponent implements OnInit {
+  personalInfo = [
+    "const",
+    "info",
+    "=",
+    "{",
+    "name:",
+    "'Brian Evans',",
+    "title:",
+    "'Full Stack Web Developer'",
+    "}",
+  ];
   constructor() {}
 
   ngOnInit() {}
