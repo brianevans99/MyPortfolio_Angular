@@ -2,7 +2,7 @@
   <li class="mx-2" *ngFor="let icon of icons">
     <a
       href="{{ icon.urlLink }}"
-      class="text-2xl {{ icon.class }}"
+      class="{{ icon.class }} text-2xl"
       target="_blank"
       rel="noopener noreferrer"
       ><fa name="{{ icon.icon }}"></fa

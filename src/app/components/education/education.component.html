@@ -1,4 +1,6 @@
-<div *ngFor="let item of education">
-  <span>Term: {{ item.term }}</span>
-  <span>Program: {{ item.program }}</span>
+<div class="text-center lg:text-left" *ngFor="let item of education">
+  <span class="font-bold">Term: </span>
+  <span class="text-gray-500 capitalize mr-2">{{ item.term }}</span>
+  <span class="font-bold">Program: </span>
+  <span class="text-gray-500 capitalize">{{ item.program }}</span>
 </div>
