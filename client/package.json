@@ -11,8 +11,14 @@
     "watch:css": "postcss src/tailwind.css -o src/main.css",
     "build:css": "postcss src/tailwind.css -o src/main.css"
   },
+  "engines": {
+    "node": "12.16.3",
+    "npm": "6.14.9"
+  },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~8.3.14",
+    "@angular/compiler-cli": "~8.2.11",
     "@angular/animations": "~8.2.11",
     "@angular/cdk": "~8.2.3",
     "@angular/common": "~8.2.11",
@@ -32,7 +38,8 @@
     "rxjs": "~6.4.0",
     "tailwindcss": "^1.9.6",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "zone.js": "~0.9.1",
+    "typescript": "~3.5.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.14",
