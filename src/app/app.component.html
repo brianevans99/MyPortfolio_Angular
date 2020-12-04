@@ -1,4 +1,6 @@
 <div class="text-white bg-black h-screen">
   <app-header></app-header>
-  <router-outlet></router-outlet>
+  <div [@routeAnimation]="getDepth(myOutlet)" class="relative">
+    <router-outlet #myOutlet="outlet"></router-outlet>
+  </div>
 </div>

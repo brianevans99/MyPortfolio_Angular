@@ -36,14 +36,13 @@ import { ProjectsComponent } from "./components/projects/projects.component";
 import { SocialComponent } from "./components/social/social.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { SocialListComponent } from "./components/social/social-list/social-list.component";
-import { ContactformComponent } from "./components/contactform/contactform.component";
-import { BasicFormComponent } from "./components/contactform/basic-form/basic-form.component";
+import { ContactFormComponent } from "./components/contactform/contactform.component";
 
 const appRoutes: Routes = [
-  { path: "", component: HomepageComponent },
-  { path: "portfolio", component: PortfolioComponent },
-  { path: "resume", component: ResumeComponent },
-  { path: "contact", component: ContactpageComponent },
+  { path: "", component: HomepageComponent, data: { depth: 1 } },
+  { path: "portfolio", component: PortfolioComponent, data: { depth: 2 } },
+  { path: "resume", component: ResumeComponent, data: { depth: 3 } },
+  { path: "contact", component: ContactpageComponent, data: { depth: 4 } },
 ];
 
 @NgModule({
@@ -65,8 +64,7 @@ const appRoutes: Routes = [
     ContactComponent,
     SocialListComponent,
     ContactpageComponent,
-    ContactformComponent,
-    BasicFormComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
