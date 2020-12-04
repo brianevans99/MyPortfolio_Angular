@@ -28,12 +28,11 @@ export class BasicFormComponent implements OnInit {
     const formValue = this.myForm.value;
 
     // logic for submitting values to backend (async/await)
+
     setTimeout(() => {
       this.loading = false;
       this.success = true;
     }, 1000);
-
-    console.log("form submitted");
   }
 
   get phoneForms() {
