@@ -2,7 +2,9 @@
   class="grid grid-cols-4 lg:grid-cols-3 gap-1 bg-gray-900 text-gray-400 overflow-hidden"
 >
   <div
-    class="cursor-pointer bg-black transition duration-200 ease-in-out hover:bg-gray-900 hover:scale-105 transform col-span-4 sm:col-span-2 lg:col-span-1 text-justify p-2"
+    class="{{ tailwind.baseCSS }} {{
+      tailwind.hover
+    }} col-span-4 sm:col-span-2 lg:col-span-1 text-justify p-2"
     *ngFor="let item of projects"
   >
     <div className="flex flex-col px-2 text-gray-500">

@@ -6,6 +6,12 @@ import { Project } from "./project.model";
   templateUrl: "./projects.component.html",
 })
 export class ProjectsComponent implements OnInit {
+  tailwind = {
+    baseCSS: "cursor-pointer bg-black",
+    hover:
+      "transition duration-200 ease-in-out hover:bg-gray-900 hover:scale-105 transform",
+  };
+
   projects: Project[] = [
     new Project(
       "Bravo Echo Web Development",
