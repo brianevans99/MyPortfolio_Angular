@@ -1,8 +1,8 @@
 <ul class="flex justify-center text-xl pt-2">
-  <li class="mx-2" *ngFor="let icon of icons">
+  <li class="mx-2 {{ icon.class }}" *ngFor="let icon of icons">
     <a
       href="{{ icon.urlLink }}"
-      class="{{ icon.class }} text-2xl"
+      class="text-2xl"
       target="_blank"
       rel="noopener noreferrer"
       ><fa name="{{ icon.icon }}"></fa

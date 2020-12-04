@@ -1,27 +1,21 @@
-# Myapp
+# <img src='https://www.brianevans99.com/static/media/avatar.4da51b8f.png' width="80" /> Brian Evans
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
+### This is a translation of my original React portfolio website to Angular.
 
-## Development server
+### Live link : [myportfolio-angular.herokuapp.com](http://myportfolio-angular.herokuapp.com/ "Brian's Angular portfolio")
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Project Status
 
-## Build
+Welcome to my portfolio and personal information website. In each release, my goal is to make it as eye-catching, lightweight and fast-loading as possible. This release is built with Angular and includes a new contact form.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Technologies
 
-## Running unit tests
+This project uses Angular and Material UI for front-end design and a simple back-end server utilizing Express. Styling is accomplished with Tailwind CSS and the icon library of Font Awesome. Data for this website is stored in the Angular TypeScript files.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Future Development
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Future releases of this website will include a blog section.
